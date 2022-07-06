@@ -4,6 +4,7 @@ import DiscordLogo from "../../assets/discord.svg";
 import TwitterLogo from "../../assets/twitter.svg";
 import CraftLogo from "../../assets/craft.svg";
 import Cursors from "../../assets/Cursors.png";
+import CursorsMobile from "../../assets/cursors-mobile.png";
 
 import Panorama from "../../assets/panorama/panorama.png";
 import PanoramaFloor from "../../assets/panorama/Floor.png";
@@ -93,7 +94,8 @@ function NFTPage() {
 
       {/* CURSORS */}
       <div className="container px-3 mx-auto text-center my-28 max-w-8xl">
-        <img src={Cursors} alt="NFT Cursors" className="w-[200vw] translate-x-[-50vw] md:translate-x-0 md:w-full max-w-none" />
+        <img src={Cursors} alt="NFT Cursors" className="hidden md:block" />
+        <img src={CursorsMobile} alt="NFT Cursors" className="block md:hidden" />
       </div>
 
       {/* UTILITY */}
@@ -180,55 +182,61 @@ function NFTPage() {
         </div>
       </div>
 
+      {/* TEAM */}
+      <div className="container px-6 py-20 mx-auto lg:px-0 max-w-7xl">
+        <Team/>
+      </div>
+
       {/* INVESTORS */}
       <div className="container max-w-5xl px-3 mx-auto my-20 lg:px-0 md:my-32">
         <div className="py-8 md:py-12 bg-blue-50 bg-opacity-20 rounded-3xl border-opacity-30 glass-glow">
-          <H1 className="mb-8 text-center md:mb-20">Investors</H1>
-          <div className="grid grid-cols-2 gap-y-12 gap-x-0 md:gap-x-28">
-            <a href="https://lunar.vc/" target="_blank" rel="noreferrer">
+          <H1 className="mb-8 text-center md:mb-12">Our Partners</H1>
+          <hr className="mx-12 mb-6 md:mb-9 opacity-20" />
+          <div className="grid grid-cols-2 pl-10 gap-y-12 gap-x-0 md:gap-x-28">
+            <a className="transition-transform duration-1000 hover:scale-95" href="https://lunar.vc/" target="_blank" rel="noreferrer">
               <img src={LunarIcon} alt="" />
             </a>
-            <a href="https://peak.capital/" target="_blank" rel="noreferrer">
+            <a className="transition-transform duration-1000 hover:scale-95" href="https://peak.capital/" target="_blank" rel="noreferrer">
               <img src={PeakIcon} alt="" />
             </a>
           </div>
-          <hr className="mx-12 my-6 md:my-12 opacity-20" />
-          <div className="grid grid-cols-2 gap-y-2 md:gap-y-12 md:grid-cols-3 gap-x-0 md:gap-x-28">
-            <a href="https://www.flyerone.vc/" target="_blank" rel="noreferrer">
+          <hr className="mx-12 my-6 md:my-9 opacity-20" />
+          <div className="grid grid-cols-2 px-14 gap-y-2 md:gap-y-6 md:grid-cols-3 gap-x-0 md:gap-x-28">
+            <a className="transition-transform duration-1000 hover:scale-95" href="https://www.flyerone.vc/" target="_blank" rel="noreferrer">
               <img src={FlyerIcon} alt="" />
             </a>
-            <a href="https://500.co/" target="_blank" rel="noreferrer">
+            <a className="transition-transform duration-1000 hover:scale-95" href="https://500.co/" target="_blank" rel="noreferrer">
               <img src={FiveHundredIcon} alt="" />
             </a>
-            <a href="https://circlecove.com/" target="_blank" rel="noreferrer">
+            <a className="transition-transform duration-1000 hover:scale-95" href="https://circlecove.com/" target="_blank" rel="noreferrer">
               <img src={CircleIcon} alt="" />
             </a>
-            <a href="https://bankofgeorgia.ge/en/" target="_blank" rel="noreferrer">
+            <a className="transition-transform duration-1000 hover:scale-95" href="https://bankofgeorgia.ge/en/" target="_blank" rel="noreferrer">
               <img src={BogIcon} alt="" />
             </a>
-            <a href="https://www.zemuvc.co/" target="_blank" rel="noreferrer">
+            <a className="transition-transform duration-1000 hover:scale-95" href="https://www.zemuvc.co/" target="_blank" rel="noreferrer">
               <img src={ZemuIcon} alt="" />
             </a>
-            <a href="https://www.wayra.com/" target="_blank" rel="noreferrer">
+            <a className="transition-transform duration-1000 hover:scale-95" href="https://www.wayra.com/" target="_blank" rel="noreferrer">
               <img src={WayraIcon} alt="" />
             </a>
           </div>
-          <hr className="mx-12 my-6 md:my-12 opacity-20" />
+          <hr className="mx-12 my-6 md:my-9 opacity-20" />
           <div className="grid grid-cols-3">
             <div className="text-center">
-              <h2 className="text-4xl font-black md:text-6xl text-violet-50 text-shadow-xs">
+              <h2 className="text-4xl font-black md:text-5xl text-violet-50 text-shadow-xs">
                 10
               </h2>
               <P>Countries</P>
             </div>
             <div className="text-center">
-              <h2 className="text-4xl font-black md:text-6xl text-violet-50 text-shadow-xs">
+              <h2 className="text-4xl font-black md:text-5xl text-violet-50 text-shadow-xs">
                 9
               </h2>
               <P><span className="hidden md:inline">Institutional</span> investors</P>
             </div>
             <div className="text-center">
-              <h2 className="text-4xl font-black md:text-6xl text-violet-50 text-shadow-xs">
+              <h2 className="text-4xl font-black md:text-5xl text-violet-50 text-shadow-xs">
                 2
               </h2>
               <P>Angels</P>
@@ -242,10 +250,6 @@ function NFTPage() {
         <H1 className="mb-6 md:mb-12 md:text-acenter">Frequently Asked Questions</H1>
         <FAQ />
       </div>
-
-      {/* <div className="container max-w-5xl py-32 mx-auto">
-        <Team/>
-      </div> */}
 
       {/* FOOTER */}
       <div className="container max-w-5xl px-6 py-16 mx-auto lg:py-32 lg:px-0">
