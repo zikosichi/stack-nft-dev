@@ -1,7 +1,7 @@
 export function H1({ children, className }) {
   return (
     <h1
-      className={`${className} md:leading-tight font-bold text-transparent bg-clip-text text-4xl md:text-6xl bg-gradient-to-r from-white to-violet-200`}
+      className={`${className} md:leading-tight font-medium text-transparent bg-clip-text text-4xl md:text-7xl bg-gradient-to-r from-white to-violet-200`}
     >
       {children}
     </h1>

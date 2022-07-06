@@ -44,17 +44,24 @@ function NFTPage() {
       <div className="container px-4 pt-20 mx-auto text-center md:pt-32">
         <img src={StackLogo} alt="Stack Logo" className="mx-auto" />
 
-        <div className="max-w-3xl px-4 mx-auto">
-          <H1 className="max-w-3xl mt-20 md:mt-44">
-            6,242 NFTs to make online collaboration harmonious
+        <div className="max-w-5xl px-4 mx-auto">
+          <H1 className="max-w-5xl mt-20 md:mt-44">
+            {/* <span className="font-normal text-7xl">We organize chaotic internet</span> */}
+            We organize chaotic internet
           </H1>
           <P className="mt-10">
-            Stack is a Multiplayer browser for Productive Collaboration
+            Stack is a Spatial Browser for Mindful online living
           </P>
 
           <div className="inline-flex flex-col gap-3 mx-auto mt-20 md:flex-row">
-            <Button href="https://discord.stackbrowser.com/" icon={DiscordLogo}>Join our Discord</Button>
-            <Button href="https://twitter.com/stack_hq" color="lightBlue" icon={TwitterLogo}>
+            <Button href="https://discord.stackbrowser.com/" icon={DiscordLogo}>
+              Join our Discord
+            </Button>
+            <Button
+              href="https://twitter.com/stack_hq"
+              color="lightBlue"
+              icon={TwitterLogo}
+            >
               See sneak peeks
             </Button>
           </div>
@@ -65,8 +72,16 @@ function NFTPage() {
       <div className="container mx-auto text-center mb-12 max-w-[1800px]">
         <div className="relative w-[200vw] translate-x-[-50vw] lg:translate-x-0 lg:w-auto">
           <img src={Panorama} alt="Stack Panorama" />
-          <img src={PanoramaFloor} alt="Stack Floor" className="absolute -bottom-[40%] opacity-50 w-full scale-x-105" />
-          <img src={PanoramaReflection} alt="Stack Floor" className="absolute -bottom-[40%] w-[94%] left-1/2 -translate-x-1/2" />
+          <img
+            src={PanoramaFloor}
+            alt="Stack Floor"
+            className="absolute -bottom-[40%] opacity-50 w-full scale-x-105"
+          />
+          <img
+            src={PanoramaReflection}
+            alt="Stack Floor"
+            className="absolute -bottom-[40%] w-[94%] left-1/2 -translate-x-1/2"
+          />
         </div>
       </div>
 
@@ -74,11 +89,11 @@ function NFTPage() {
       <div className="container max-w-5xl px-6 mx-auto my-12 md:text-center">
         <H1>About the project</H1>
         <P className="mt-10">
-          This is a Utility NFT Project. We are issuing 6,242 Non-Fungible
-          tokens as an ownership deed for Stack PRO lifetime License.
+          This is a Utility NFT Project. We are issuing Non-Fungible tokens as
+          an ownership deed for Stack PRO lifetime License.
         </P>
         <P className="mt-10">
-          We are also selling 6,242 Unique Cursors as the Art representing NFTs.
+          We are also selling Unique Cursors as the Art representing NFTs.
         </P>
         <P className="mt-10">
           Join us and buy Stack NFT only if you share our vision for the future
@@ -86,7 +101,11 @@ function NFTPage() {
         </P>
 
         <div className="inline-flex gap-3 mx-auto mt-12">
-          <Button href="https://whitepaper.stackbrowser.com/" color="white" icon={CraftLogo}>
+          <Button
+            href="https://whitepaper.stackbrowser.com/"
+            color="white"
+            icon={CraftLogo}
+          >
             Read Whitepaper
           </Button>
         </div>
@@ -95,7 +114,11 @@ function NFTPage() {
       {/* CURSORS */}
       <div className="container px-3 mx-auto text-center my-28 max-w-8xl">
         <img src={Cursors} alt="NFT Cursors" className="hidden md:block" />
-        <img src={CursorsMobile} alt="NFT Cursors" className="block md:hidden" />
+        <img
+          src={CursorsMobile}
+          alt="NFT Cursors"
+          className="block md:hidden"
+        />
       </div>
 
       {/* UTILITY */}
@@ -104,7 +127,10 @@ function NFTPage() {
         <div className="grid grid-cols-1 gap-0 md:grid-cols-12 md:gap-12">
           <div className="flex flex-col md:col-span-6 lg:col-span-4">
             <div className="mb-12 md:mb-20">
-              <UtilityIcon className="flex-shrink-0 hidden md:flex" icon={InfinityIcon} />
+              <UtilityIcon
+                className="flex-shrink-0 hidden md:flex"
+                icon={InfinityIcon}
+              />
               <h2 className="text-[#FFEAB6] font-bold md:font-medium text-2xl md:text-3xl text-shadow-xs mb-4">
                 Lifetime License Of Stack PRO
               </h2>
@@ -117,7 +143,10 @@ function NFTPage() {
             </div>
 
             <div className="mb-12 md:mb-20">
-              <UtilityIcon className="flex-shrink-0 hidden md:flex" icon={UsersIcon} />
+              <UtilityIcon
+                className="flex-shrink-0 hidden md:flex"
+                icon={UsersIcon}
+              />
               <h2 className="text-[#FFEAB6] font-bold md:font-medium text-2xl md:text-3xl text-shadow-xs mb-4">
                 Software as a Stake
               </h2>
@@ -127,7 +156,10 @@ function NFTPage() {
             </div>
 
             <div className="mb-12 md:mb-20">
-              <UtilityIcon className="flex-shrink-0 hidden md:flex" icon={CursorIcon} />
+              <UtilityIcon
+                className="flex-shrink-0 hidden md:flex"
+                icon={CursorIcon}
+              />
               <h2 className="text-[#FFEAB6] font-bold md:font-medium text-2xl md:text-3xl text-shadow-xs mb-4">
                 Unique Cursor
               </h2>
@@ -184,7 +216,7 @@ function NFTPage() {
 
       {/* TEAM */}
       <div className="container px-6 py-20 mx-auto lg:px-0 max-w-7xl">
-        <Team/>
+        <Team />
       </div>
 
       {/* INVESTORS */}
@@ -193,31 +225,71 @@ function NFTPage() {
           <H1 className="mb-8 text-center md:mb-12">Our Partners</H1>
           <hr className="mx-12 mb-6 md:mb-9 opacity-20" />
           <div className="grid grid-cols-2 pl-10 gap-y-12 gap-x-0 md:gap-x-28">
-            <a className="transition-transform duration-1000 hover:scale-95" href="https://lunar.vc/" target="_blank" rel="noreferrer">
+            <a
+              className="transition-transform duration-1000 hover:scale-95"
+              href="https://lunar.vc/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img src={LunarIcon} alt="" />
             </a>
-            <a className="transition-transform duration-1000 hover:scale-95" href="https://peak.capital/" target="_blank" rel="noreferrer">
+            <a
+              className="transition-transform duration-1000 hover:scale-95"
+              href="https://peak.capital/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img src={PeakIcon} alt="" />
             </a>
           </div>
           <hr className="mx-12 my-6 md:my-9 opacity-20" />
           <div className="grid grid-cols-2 px-14 gap-y-2 md:gap-y-6 md:grid-cols-3 gap-x-0 md:gap-x-28">
-            <a className="transition-transform duration-1000 hover:scale-95" href="https://www.flyerone.vc/" target="_blank" rel="noreferrer">
+            <a
+              className="transition-transform duration-1000 hover:scale-95"
+              href="https://www.flyerone.vc/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img src={FlyerIcon} alt="" />
             </a>
-            <a className="transition-transform duration-1000 hover:scale-95" href="https://500.co/" target="_blank" rel="noreferrer">
+            <a
+              className="transition-transform duration-1000 hover:scale-95"
+              href="https://500.co/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img src={FiveHundredIcon} alt="" />
             </a>
-            <a className="transition-transform duration-1000 hover:scale-95" href="https://circlecove.com/" target="_blank" rel="noreferrer">
+            <a
+              className="transition-transform duration-1000 hover:scale-95"
+              href="https://circlecove.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img src={CircleIcon} alt="" />
             </a>
-            <a className="transition-transform duration-1000 hover:scale-95" href="https://bankofgeorgia.ge/en/" target="_blank" rel="noreferrer">
+            <a
+              className="transition-transform duration-1000 hover:scale-95"
+              href="https://bankofgeorgia.ge/en/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img src={BogIcon} alt="" />
             </a>
-            <a className="transition-transform duration-1000 hover:scale-95" href="https://www.zemuvc.co/" target="_blank" rel="noreferrer">
+            <a
+              className="transition-transform duration-1000 hover:scale-95"
+              href="https://www.zemuvc.co/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img src={ZemuIcon} alt="" />
             </a>
-            <a className="transition-transform duration-1000 hover:scale-95" href="https://www.wayra.com/" target="_blank" rel="noreferrer">
+            <a
+              className="transition-transform duration-1000 hover:scale-95"
+              href="https://www.wayra.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img src={WayraIcon} alt="" />
             </a>
           </div>
@@ -233,7 +305,10 @@ function NFTPage() {
               <h2 className="text-4xl font-black md:text-5xl text-violet-50 text-shadow-xs">
                 9
               </h2>
-              <P><span className="hidden md:inline">Institutional</span> investors</P>
+              <P>
+                <span className="hidden md:inline">Institutional</span>{" "}
+                investors
+              </P>
             </div>
             <div className="text-center">
               <h2 className="text-4xl font-black md:text-5xl text-violet-50 text-shadow-xs">
@@ -247,7 +322,9 @@ function NFTPage() {
 
       {/* FAQ */}
       <div className="container max-w-5xl px-6 py-12 mx-auto lg:py-32 lg:px-0">
-        <H1 className="mb-6 md:mb-12 md:text-acenter">Frequently Asked Questions</H1>
+        <H1 className="mb-6 md:mb-12 md:text-acenter">
+          Frequently Asked Questions
+        </H1>
         <FAQ />
       </div>
 
@@ -256,8 +333,12 @@ function NFTPage() {
         <div className="grid items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           <div>
             <H1 className="mb-3 md:mb-6 leading-[1.1]">Grab your spaceship</H1>
-            <P className="mb-6 text-3xl md:mb-10 text-opacity-60">And join the journy</P>
-            <Button href="https://discord.stackbrowser.com/" icon={DiscordLogo}>Join our Discord</Button>
+            <P className="mb-6 text-3xl md:mb-10 text-opacity-60">
+              And join the journy
+            </P>
+            <Button href="https://discord.stackbrowser.com/" icon={DiscordLogo}>
+              Join our Discord
+            </Button>
           </div>
           <div className="relative order-first mb-6 lg:col-span-2 md:order-last md:mb-0">
             <img src={DeckGround} alt="" className="w-full" />
@@ -275,49 +356,106 @@ function NFTPage() {
       <div className="container max-w-5xl px-6 py-16 mx-auto md:py-32 lg:px-0">
         <div className="grid grid-cols-2 gap-10 md:grid-cols-3 md:gap-0">
           <div>
-            <P className="mb-4"><span className="text-lg md:text-xl">Stack NFT</span></P>
-            <a href="https://www.craft.do/s/nHv2yCgd6nnONK/b/3323E096-D2C9-4165-977F-82C68A0A58D8/%F0%9F%90%B5Why_NFT" className="block mb-1 opacity-50 hover:opacity-100">
-              <P><span className="text-lg md:text-xl">Why NFT?</span></P>
+            <P className="mb-4">
+              <span className="text-lg md:text-xl">Stack NFT</span>
+            </P>
+            <a
+              href="https://www.craft.do/s/nHv2yCgd6nnONK/b/3323E096-D2C9-4165-977F-82C68A0A58D8/%F0%9F%90%B5Why_NFT"
+              className="block mb-1 opacity-50 hover:opacity-100"
+            >
+              <P>
+                <span className="text-lg md:text-xl">Why NFT?</span>
+              </P>
             </a>
-            <a href="https://www.craft.do/s/nHv2yCgd6nnONK/b/9E890184-6154-4BC5-A9CC-F4E3C29671A7/%F0%9F%8D%8E_Utility" className="block mb-1 opacity-50 hover:opacity-100">
-              <P><span className="text-lg md:text-xl">Utility</span></P>
+            <a
+              href="https://www.craft.do/s/nHv2yCgd6nnONK/b/9E890184-6154-4BC5-A9CC-F4E3C29671A7/%F0%9F%8D%8E_Utility"
+              className="block mb-1 opacity-50 hover:opacity-100"
+            >
+              <P>
+                <span className="text-lg md:text-xl">Utility</span>
+              </P>
             </a>
-            <a href="https://www.craft.do/s/nHv2yCgd6nnONK/b/84AE195A-F0A0-4687-BBAA-C004EF42444E/%F0%9F%A5%87Rarity" className="block mb-1 opacity-50 hover:opacity-100">
-              <P><span className="text-lg md:text-xl">Rarity</span></P>
+            <a
+              href="https://www.craft.do/s/nHv2yCgd6nnONK/b/84AE195A-F0A0-4687-BBAA-C004EF42444E/%F0%9F%A5%87Rarity"
+              className="block mb-1 opacity-50 hover:opacity-100"
+            >
+              <P>
+                <span className="text-lg md:text-xl">Rarity</span>
+              </P>
             </a>
-            <a href="https://www.craft.do/s/nHv2yCgd6nnONK/b/9844861F-3DCC-49A7-9966-060F22515EF7/%F0%9F%96%BC_Art" className="block mb-1 opacity-50 hover:opacity-100">
-              <P><span className="text-lg md:text-xl">The Art</span></P>
+            <a
+              href="https://www.craft.do/s/nHv2yCgd6nnONK/b/9844861F-3DCC-49A7-9966-060F22515EF7/%F0%9F%96%BC_Art"
+              className="block mb-1 opacity-50 hover:opacity-100"
+            >
+              <P>
+                <span className="text-lg md:text-xl">The Art</span>
+              </P>
             </a>
-            <a href="https://www.craft.do/s/nHv2yCgd6nnONK/b/74DA3241-9EF8-4C7F-A15B-9DE106AC872A/%F0%9F%A4%9DPartners" className="block mb-1 opacity-50 hover:opacity-100">
-              <P><span className="text-lg md:text-xl">Partners</span></P>
+            <a
+              href="https://www.craft.do/s/nHv2yCgd6nnONK/b/74DA3241-9EF8-4C7F-A15B-9DE106AC872A/%F0%9F%A4%9DPartners"
+              className="block mb-1 opacity-50 hover:opacity-100"
+            >
+              <P>
+                <span className="text-lg md:text-xl">Partners</span>
+              </P>
             </a>
           </div>
 
           <div>
-            <P className="mb-4"><span className="text-lg md:text-xl">Join the Tribe</span></P>
-            <a href="https://discord.stackbrowser.com/" className="block mb-1 opacity-50 hover:opacity-100">
-              <P><span className="text-lg md:text-xl">Discord</span></P>
+            <P className="mb-4">
+              <span className="text-lg md:text-xl">Join the Tribe</span>
+            </P>
+            <a
+              href="https://discord.stackbrowser.com/"
+              className="block mb-1 opacity-50 hover:opacity-100"
+            >
+              <P>
+                <span className="text-lg md:text-xl">Discord</span>
+              </P>
             </a>
-            <a href="https://twitter.com/stack_hq" className="block mb-1 opacity-50 hover:opacity-100">
-              <P><span className="text-lg md:text-xl">Twitter</span></P>
+            <a
+              href="https://twitter.com/stack_hq"
+              className="block mb-1 opacity-50 hover:opacity-100"
+            >
+              <P>
+                <span className="text-lg md:text-xl">Twitter</span>
+              </P>
             </a>
-            <a href="https://www.instagram.com/stackbrowser/" className="block mb-1 opacity-50 hover:opacity-100">
-              <P><span className="text-lg md:text-xl">Instagram</span></P>
+            <a
+              href="https://www.instagram.com/stackbrowser/"
+              className="block mb-1 opacity-50 hover:opacity-100"
+            >
+              <P>
+                <span className="text-lg md:text-xl">Instagram</span>
+              </P>
             </a>
           </div>
 
           <div>
-            <P className="mb-4"><span className="text-lg md:text-xl">Stack Browser</span></P>
-            <a href="https://www.craft.do/s/nHv2yCgd6nnONK/b/473B677E-FF13-4FA8-AD46-611152249FDA/%F0%9F%96%90_What_is_Stack" className="block mb-1 opacity-50 hover:opacity-100">
-              <P><span className="text-lg md:text-xl">What is Stack</span></P>
+            <P className="mb-4">
+              <span className="text-lg md:text-xl">Stack Browser</span>
+            </P>
+            <a
+              href="https://www.craft.do/s/nHv2yCgd6nnONK/b/473B677E-FF13-4FA8-AD46-611152249FDA/%F0%9F%96%90_What_is_Stack"
+              className="block mb-1 opacity-50 hover:opacity-100"
+            >
+              <P>
+                <span className="text-lg md:text-xl">What is Stack</span>
+              </P>
             </a>
-            <a href="https://stackbrowser.com/" className="block mb-1 opacity-50 hover:opacity-100">
-              <P><span className="text-lg md:text-xl">Download Stack Legacy</span></P>
+            <a
+              href="https://stackbrowser.com/"
+              className="block mb-1 opacity-50 hover:opacity-100"
+            >
+              <P>
+                <span className="text-lg md:text-xl">
+                  Download Stack Legacy
+                </span>
+              </P>
             </a>
           </div>
         </div>
       </div>
-
     </div>
   );
 }
