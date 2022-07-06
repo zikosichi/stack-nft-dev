@@ -4,7 +4,11 @@ import DiscordLogo from "../../assets/discord.svg";
 import TwitterLogo from "../../assets/twitter.svg";
 import CraftLogo from "../../assets/craft.svg";
 import Cursors from "../../assets/Cursors.png";
+import Panorama from "../../assets/panorama.png";
 import SpaceDecks from "../../assets/SpaceDecks.png";
+import DeckGround from "../../assets/footer/deck.png";
+import Spaceship from "../../assets/footer/Spaceship.png";
+import SpaceshipShadow from "../../assets/footer/Shadow.png";
 
 import InfinityIcon from "../../assets/perks/infinity.svg";
 import CalendarIcon from "../../assets/perks/calendar.svg";
@@ -25,6 +29,8 @@ import WayraIcon from "../../assets/investor-logos/Wayra.png";
 import ZemuIcon from "../../assets/investor-logos/Zemu.png";
 
 import { Button, H1, P, UtilityIcon } from "./Elements";
+import { FAQ } from "./FAQ";
+import { Team } from "./Team";
 
 function NFTPage() {
   return (
@@ -48,6 +54,11 @@ function NFTPage() {
             </Button>
           </div>
         </div>
+      </div>
+
+      {/* PANORAMA */}
+      <div className="container mx-auto text-center my-28 max-w-8xl">
+        <img src={Panorama} alt="Stack Panorama" />
       </div>
 
       {/* ABOUT */}
@@ -88,8 +99,7 @@ function NFTPage() {
                 Lifetime License Of Stack PRO
               </h2>
               <P className="mb-4 text-xl">
-                {" "}
-                Limitless Organization & harmonious collaboration{" "}
+                Limitless Organization & harmonious collaboration
               </P>
               <p className="bg-[#FFEAB6] bg-opacity-20 text-[#FFEAB6] px-3 py-2 inline-block rounded-md text-lg rounded-tr-2xl rounded-bl-2xl">
                 Price without NFT - $7,000
@@ -102,8 +112,7 @@ function NFTPage() {
                 Software as a Stake
               </h2>
               <P className="text-xl">
-                {" "}
-                Sharing return on innovation with the community{" "}
+                Sharing return on innovation with the community
               </P>
             </div>
 
@@ -113,8 +122,7 @@ function NFTPage() {
                 Unique Cursor
               </h2>
               <P className="text-xl">
-                {" "}
-                Own Your Unique Cursor And set it as a default on your desktop{" "}
+                Own Your Unique Cursor And set it as a default on your desktop
               </P>
             </div>
           </div>
@@ -132,44 +140,39 @@ function NFTPage() {
           <div className="flex items-center gap-4">
             <UtilityIcon className="flex-shrink-0" icon={TicketIcon} />
             <P className="mb-4 text-xl">
-              {" "}
-              Permanent listing on Stack NFT Hall of Fame{" "}
+              Permanent listing on Stack NFT Hall of Fame
             </P>
           </div>
           <div className="flex items-center gap-4">
             <UtilityIcon className="flex-shrink-0" icon={UserIcon} />
             <P className="mb-4 text-xl">
-              {" "}
-              Special Role in Discord (Displayed separately from online members){" "}
+              Special Role in Discord (Displayed separately from online members)
             </P>
           </div>
           <div className="flex items-center gap-4">
             <UtilityIcon className="flex-shrink-0" icon={DiscordIcon} />
             <P className="mb-4 text-xl">
-              {" "}
-              Exclusive Access to Stack team Discord channels{" "}
+              Exclusive Access to Stack team Discord channels
             </P>
           </div>
           <div className="flex items-center gap-4">
             <UtilityIcon className="flex-shrink-0" icon={CalendarIcon} />
             <P className="mb-4 text-xl">
-              {" "}
               Exclusive access to Stackers Online & offline events throughout
-              the year{" "}
+              the year
             </P>
           </div>
           <div className="flex items-center gap-4">
             <UtilityIcon className="flex-shrink-0" icon={GavelIcon} />
             <P className="mb-4 text-xl">
-              {" "}
-              Exclusive Access to Stackers’ governance and decision making
-              Discord Channels{" "}
+              Exclusive Access to Stackers' governance and decision making
+              Discord Channels
             </P>
           </div>
         </div>
       </div>
 
-      {/* PERKS */}
+      {/* INVESTORS */}
       <div className="container max-w-5xl mx-auto my-32">
         <div className="py-12 bg-blue-50 bg-opacity-20 rounded-3xl border-opacity-30 glass-glow">
           <H1 className="mb-20 text-center">Investors</H1>
@@ -177,28 +180,28 @@ function NFTPage() {
             <a href="https://lunar.vc/" target="_blank" rel="noreferrer">
               <img src={LunarIcon} alt="" />
             </a>
-            <a href="https://lunar.vc/" target="_blank" rel="noreferrer">
+            <a href="https://peak.capital/" target="_blank" rel="noreferrer">
               <img src={PeakIcon} alt="" />
             </a>
           </div>
           <hr className="mx-12 my-12 opacity-20" />
           <div className="grid grid-cols-3 gap-12 gap-x-28">
-            <a href="https://lunar.vc/" target="_blank" rel="noreferrer">
+            <a href="https://500.co/" target="_blank" rel="noreferrer">
               <img src={FiveHundredIcon} alt="" />
             </a>
-            <a href="https://lunar.vc/" target="_blank" rel="noreferrer">
+            <a href="https://www.flyerone.vc/" target="_blank" rel="noreferrer">
               <img src={FlyerIcon} alt="" />
             </a>
-            <a href="https://lunar.vc/" target="_blank" rel="noreferrer">
+            <a href="https://circlecove.com/" target="_blank" rel="noreferrer">
               <img src={CircleIcon} alt="" />
             </a>
-            <a href="https://lunar.vc/" target="_blank" rel="noreferrer">
+            <a href="https://bankofgeorgia.ge/en/" target="_blank" rel="noreferrer">
               <img src={BogIcon} alt="" />
             </a>
-            <a href="https://lunar.vc/" target="_blank" rel="noreferrer">
+            <a href="https://www.wayra.com/" target="_blank" rel="noreferrer">
               <img src={WayraIcon} alt="" />
             </a>
-            <a href="https://lunar.vc/" target="_blank" rel="noreferrer">
+            <a href="https://www.zemuvc.co/" target="_blank" rel="noreferrer">
               <img src={ZemuIcon} alt="" />
             </a>
           </div>
@@ -225,6 +228,84 @@ function NFTPage() {
           </div>
         </div>
       </div>
+
+      {/* FAQ */}
+      <div className="container max-w-5xl py-32 mx-auto">
+        <H1 className="mb-20 text-center">FAQ</H1>
+        <FAQ />
+      </div>
+
+      <div className="container max-w-5xl py-32 mx-auto">
+        {/* <Team/> */}
+      </div>
+
+      {/* FOOTER */}
+      <div className="container max-w-5xl py-32 mx-auto">
+        <div className="grid items-center grid-cols-3">
+          <div>
+            <H1 className="mb-6 leading-[1.1]">Grab your spaceship</H1>
+            <P className="mb-10 text-3xl text-opacity-60">And join the journy</P>
+            <Button icon={DiscordLogo}>Join our Discord</Button>
+          </div>
+          <div className="relative col-span-2">
+            <img src={DeckGround} alt="" className="w-full" />
+            <div className="absolute left-[50%] bottom-[20%] w-[35%] -translate-x-1/2 -translate-y-1/2">
+              <img src={SpaceshipShadow} alt="" className="shadow-animation" />
+            </div>
+            <div className="absolute left-[50%] bottom-[45%] w-[35%] -translate-x-1/2 -translate-y-1/2">
+              <img src={Spaceship} alt="" className="floating" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* FOOTER NAV */}
+      <div className="container max-w-5xl py-32 mx-auto">
+        <div className="grid grid-cols-3">
+          <div>
+            <P className="mb-4 text-lg">Stack NFT</P>
+            <a href="https://www.craft.do/s/nHv2yCgd6nnONK/b/3323E096-D2C9-4165-977F-82C68A0A58D8/%F0%9F%90%B5Why_NFT" className="block mb-1 opacity-50 hover:opacity-100">
+              <P className="text-lg">Why NFT?</P>
+            </a>
+            <a href="https://www.craft.do/s/nHv2yCgd6nnONK/b/9E890184-6154-4BC5-A9CC-F4E3C29671A7/%F0%9F%8D%8E_Utility" className="block mb-1 opacity-50 hover:opacity-100">
+              <P className="text-lg">Utility</P>
+            </a>
+            <a href="https://www.craft.do/s/nHv2yCgd6nnONK/b/84AE195A-F0A0-4687-BBAA-C004EF42444E/%F0%9F%A5%87Rarity" className="block mb-1 opacity-50 hover:opacity-100">
+              <P className="text-lg">Rarity</P>
+            </a>
+            <a href="https://www.craft.do/s/nHv2yCgd6nnONK/b/9844861F-3DCC-49A7-9966-060F22515EF7/%F0%9F%96%BC_Art" className="block mb-1 opacity-50 hover:opacity-100">
+              <P className="text-lg">The Art</P>
+            </a>
+            <a href="https://www.craft.do/s/nHv2yCgd6nnONK/b/74DA3241-9EF8-4C7F-A15B-9DE106AC872A/%F0%9F%A4%9DPartners" className="block mb-1 opacity-50 hover:opacity-100">
+              <P className="text-lg">Partners</P>
+            </a>
+          </div>
+
+          <div>
+            <P className="mb-4 text-lg">Stack Browser</P>
+            <a href="https://www.craft.do/s/nHv2yCgd6nnONK/b/473B677E-FF13-4FA8-AD46-611152249FDA/%F0%9F%96%90_What_is_Stack" className="block mb-1 opacity-50 hover:opacity-100">
+              <P className="text-lg">What is Stack</P>
+            </a>
+            <a href="https://stackbrowser.com/" className="block mb-1 opacity-50 hover:opacity-100">
+              <P className="text-lg">Download Stack Legacy</P>
+            </a>
+          </div>
+
+          <div>
+            <P className="mb-4 text-lg">Join the Tribe</P>
+            <a href="https://discord.stackbrowser.com/" className="block mb-1 opacity-50 hover:opacity-100">
+              <P className="text-lg">Discord</P>
+            </a>
+            <a href="https://twitter.com/stack_hq" className="block mb-1 opacity-50 hover:opacity-100">
+              <P className="text-lg">Twitter</P>
+            </a>
+            <a href="https://www.instagram.com/stackbrowser/" className="block mb-1 opacity-50 hover:opacity-100">
+              <P className="text-lg">Instagram</P>
+            </a>
+          </div>
+        </div>
+      </div>
+
     </div>
   );
 }
