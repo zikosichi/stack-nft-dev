@@ -1,7 +1,7 @@
 export function H1({ children, className }) {
   return (
     <h1
-      className={`${className} leading-tight font-bold text-transparent bg-clip-text text-6xl bg-gradient-to-r from-white to-violet-300`}
+      className={`${className} leading-tight font-bold text-transparent bg-clip-text text-6xl bg-gradient-to-r from-white to-violet-200`}
     >
       {children}
     </h1>
@@ -11,16 +11,16 @@ export function H1({ children, className }) {
 export function P({ children, className }) {
   return (
     <p
-      className={`${className} text-2xl font-normal font-inter text-violet-50`}
+      className={`${className} text-shadow-xs text-2xl font-normal font-inter text-violet-50`}
     >
       {children}
     </p>
   );
 }
 
-export function UtilityIcon({ icon }) {
+export function UtilityIcon({ icon, className }) {
   return (
-    <div className="flex items-center justify-center w-16 h-16 mb-4 bg-white rounded-full bg-opacity-10">
+    <div className={`${className} flex items-center justify-center w-16 h-16 mb-4 bg-white rounded-full bg-opacity-10`}>
       <img src={icon} alt="" />
     </div>
   );

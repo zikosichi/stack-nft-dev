@@ -23,6 +23,10 @@
       box-shadow: inset 0px 1px 0 rgba(255, 255, 255, 0.5);
     }
 
+    .glass-glow {
+      box-shadow: -1px -1px 0 rgba(255,255,255,0.4), 0 0 0 1px rgba(255,255,255,0.4);
+    }
+
     .clipped {
       -webkit-text-fill-color: transparent;
       -webkit-background-clip: text;
