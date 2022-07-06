@@ -53,8 +53,8 @@ function NFTPage() {
           </P>
 
           <div className="inline-flex flex-col gap-3 mx-auto mt-20 md:flex-row">
-            <Button icon={DiscordLogo}>Join our Discord</Button>
-            <Button color="lightBlue" icon={TwitterLogo}>
+            <Button href="https://discord.stackbrowser.com/" icon={DiscordLogo}>Join our Discord</Button>
+            <Button href="https://twitter.com/stack_hq" color="lightBlue" icon={TwitterLogo}>
               See sneak peeks
             </Button>
           </div>
@@ -86,8 +86,8 @@ function NFTPage() {
         </P>
 
         <div className="inline-flex gap-3 mx-auto mt-12">
-          <Button color="white" icon={CraftLogo}>
-            See sneak peeks
+          <Button href="https://whitepaper.stackbrowser.com/" color="white" icon={CraftLogo}>
+            Read Whitepaper
           </Button>
         </div>
       </div>
@@ -257,7 +257,7 @@ function NFTPage() {
           <div>
             <H1 className="mb-3 md:mb-6 leading-[1.1]">Grab your spaceship</H1>
             <P className="mb-6 text-3xl md:mb-10 text-opacity-60">And join the journy</P>
-            <Button icon={DiscordLogo}>Join our Discord</Button>
+            <Button href="https://discord.stackbrowser.com/" icon={DiscordLogo}>Join our Discord</Button>
           </div>
           <div className="relative order-first mb-6 lg:col-span-2 md:order-last md:mb-0">
             <img src={DeckGround} alt="" className="w-full" />
