@@ -55,6 +55,8 @@ export function FAQ() {
         <ul className="pl-6 mb-3 list-disc">
           <li>
             <a
+              target="_blank"
+              rel="noreferrer"
               className="font-medium underline hover:text-white"
               href="https://www.craft.do/s/zAnC5c7urYBDoX/b/C2A1988B-C2BA-4820-933D-A369EE028E91/%F0%9F%A7%AD_Organization___Navigation_"
             >
@@ -63,6 +65,8 @@ export function FAQ() {
           </li>
           <li>
             <a
+              target="_blank"
+              rel="noreferrer"
               className="font-medium underline hover:text-white"
               href="https://www.craft.do/s/zAnC5c7urYBDoX/b/A925248E-15E9-4068-A80C-09D3FA676D40/%F0%9F%A7%98%F0%9F%8F%BB%E2%80%8D%E2%99%80%EF%B8%8F_Focus___Mindful_Online_Living"
             >
@@ -71,6 +75,8 @@ export function FAQ() {
           </li>
           <li>
             <a
+              target="_blank"
+              rel="noreferrer"
               className="font-medium underline hover:text-white"
               href="https://www.craft.do/s/zAnC5c7urYBDoX/b/E9772BD7-3D6B-407A-BD6F-C5BDD7F5A1C3/%F0%9F%A7%91%E2%80%8D%F0%9F%92%BB_Multiplayer___Collaboration"
             >
@@ -107,6 +113,8 @@ export function FAQ() {
           the UN.
         </p>
         <a
+          target="_blank"
+          rel="noreferrer"
           className="font-medium underline hover:text-white"
           href="https://www.craft.do/s/fwzTJuS8NlwTnI"
         >
@@ -118,6 +126,8 @@ export function FAQ() {
           We are backed by some of the most reputable and experienced partners
           in the industry, such as{" "}
           <a
+            target="_blank"
+            rel="noreferrer"
             className="font-medium underline hover:text-white"
             href="https://peak.capital/"
           >
@@ -125,6 +135,8 @@ export function FAQ() {
           </a>
           ,{" "}
           <a
+            target="_blank"
+            rel="noreferrer"
             className="font-medium underline hover:text-white"
             href="https://lunar.vc/"
           >
@@ -132,6 +144,8 @@ export function FAQ() {
           </a>
           ,{" "}
           <a
+            target="_blank"
+            rel="noreferrer"
             className="font-medium underline hover:text-white"
             href="https://500.co/"
           >
@@ -139,6 +153,8 @@ export function FAQ() {
           </a>
           , and{" "}
           <a
+            target="_blank"
+            rel="noreferrer"
             className="font-medium underline hover:text-white"
             href="https://x.wayra.com/"
           >
@@ -148,6 +164,8 @@ export function FAQ() {
           . In total Stack has 11 investors from 10 different countries.
         </p>
         <a
+          target="_blank"
+          rel="noreferrer"
           className="font-medium underline hover:text-white"
           href="https://www.craft.do/s/MfVtAY4Btm7rOP"
         >
@@ -199,6 +217,8 @@ export function FAQ() {
           </li>
         </ul>
         <a
+          target="_blank"
+          rel="noreferrer"
           className="font-medium underline hover:text-white"
           href="https://www.craft.do/s/7OPYZlvz3Oef0A"
         >
@@ -216,6 +236,8 @@ export function FAQ() {
           active supporters of Stack.
         </p>
         <a
+          target="_blank"
+          rel="noreferrer"
           className="font-medium underline hover:text-white"
           href="https://www.craft.do/s/fPiHVa3K4I5tiE"
         >
@@ -228,6 +250,8 @@ export function FAQ() {
           cursors aka Stack spaceships.
         </p>
         <a
+          target="_blank"
+          rel="noreferrer"
           className="font-medium underline hover:text-white"
           href="https://www.craft.do/s/vaFlZLaITiWyrC"
         >
@@ -247,6 +271,8 @@ export function FAQ() {
           subscriptions the NFT space has.{" "}
         </p>
         <a
+          target="_blank"
+          rel="noreferrer"
           className="font-medium underline hover:text-white"
           href="https://www.craft.do/s/Z9xjYlIjYB68zt"
         >
@@ -268,6 +294,8 @@ export function FAQ() {
         <p className="mb-3">
           We share and discuss all details related to whitelisting at our{" "}
           <a
+            target="_blank"
+            rel="noreferrer"
             className="font-medium underline hover:text-white"
             href="https://discord.stackbrowser.com/"
           >
@@ -282,6 +310,8 @@ export function FAQ() {
           third-party marketplaces. 100% of the income received through
           loyalties will be directed to{" "}
           <a
+            target="_blank"
+            rel="noreferrer"
             className="font-medium underline hover:text-white"
             href="https://placeholder.website/"
           >
@@ -305,6 +335,8 @@ export function FAQ() {
           Stackers and to show more people what we have built!
         </p>
         <a
+          target="_blank"
+          rel="noreferrer"
           className="font-medium underline hover:text-white"
           href="https://twitter.com/Stack_HQ"
         >
@@ -312,6 +344,8 @@ export function FAQ() {
         </a>{" "}
         |{" "}
         <a
+          target="_blank"
+          rel="noreferrer"
           className="font-medium underline hover:text-white"
           href="https://www.instagram.com/stackbrowser/"
         >

@@ -30,6 +30,7 @@ import CircleIcon from "../../assets/investor-logos/Circle Cove.png";
 import FlyerIcon from "../../assets/investor-logos/Flyer One Ventures.png";
 import LunarIcon from "../../assets/investor-logos/Lunar ventures.png";
 import PeakIcon from "../../assets/investor-logos/Peak Capital.png";
+import EssentioIcon from "../../assets/investor-logos/Essentio.png";
 import WayraIcon from "../../assets/investor-logos/Wayra.png";
 import ZemuIcon from "../../assets/investor-logos/Zemu.png";
 
@@ -50,19 +51,24 @@ function NFTPage() {
             We organize chaotic internet
           </H1>
           <P className="mt-10">
-            Stack is a Spatial Browser for Mindful online living
+            Stack is a Spatial Browser for Mindful Online Living
           </P>
 
           <div className="inline-flex flex-col gap-3 mx-auto mt-20 md:flex-row">
-            <Button href="https://discord.stackbrowser.com/" icon={DiscordLogo}>
-              Join our Discord
+            <Button
+              target="_blank"
+              href="https://discord.stackbrowser.com/"
+              icon={DiscordLogo}
+            >
+              Join the Discussion
             </Button>
             <Button
+              target="_blank"
               href="https://twitter.com/stack_hq"
               color="lightBlue"
               icon={TwitterLogo}
             >
-              See sneak peeks
+              See Sneak Peeks
             </Button>
           </div>
         </div>
@@ -89,8 +95,8 @@ function NFTPage() {
       <div className="container max-w-5xl px-6 mx-auto my-12 md:text-center">
         <H1>About the project</H1>
         <P className="mt-10">
-          This is a Utility NFT Project. We are issuing Non-Fungible tokens as
-          an ownership deed for Stack PRO lifetime License.
+          This is a Utility NFT project. We are issuing Non-Fungible tokens as
+          an ownership deed for Stack PRO lifetime license.
         </P>
         <P className="mt-10">
           We are also selling Unique Cursors as the Art representing NFTs.
@@ -102,6 +108,7 @@ function NFTPage() {
 
         <div className="inline-flex gap-3 mx-auto mt-12">
           <Button
+            target="_blank"
             href="https://whitepaper.stackbrowser.com/"
             color="white"
             icon={CraftLogo}
@@ -135,7 +142,7 @@ function NFTPage() {
                 Lifetime License Of Stack PRO
               </h2>
               <P className="mb-4 text-xl">
-                Limitless Organization & harmonious collaboration
+                Limitless Organization & Harmonious Collaboration
               </P>
               <p className="bg-[#FFEAB6] bg-opacity-20 text-[#FFEAB6] px-3 py-2 inline-block rounded-md text-lg rounded-tr-2xl rounded-bl-2xl">
                 Price without NFT - $7,000
@@ -224,7 +231,15 @@ function NFTPage() {
         <div className="py-8 md:py-12 bg-blue-50 bg-opacity-20 rounded-3xl border-opacity-30 glass-glow">
           <H1 className="mb-8 text-center md:mb-12">Our Partners</H1>
           <hr className="mx-12 mb-6 md:mb-9 opacity-20" />
-          <div className="grid grid-cols-2 pl-10 gap-y-12 gap-x-0 md:gap-x-28">
+          <div className="grid grid-cols-2 px-14 gap-y-2 md:gap-y-6 md:grid-cols-3 gap-x-0 md:gap-x-28">
+            <a
+              className="transition-transform duration-1000 hover:scale-95"
+              href="https://peak.capital/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={PeakIcon} alt="" />
+            </a>
             <a
               className="transition-transform duration-1000 hover:scale-95"
               href="https://lunar.vc/"
@@ -235,11 +250,11 @@ function NFTPage() {
             </a>
             <a
               className="transition-transform duration-1000 hover:scale-95"
-              href="https://peak.capital/"
+              href="https://www.wayra.com/"
               target="_blank"
               rel="noreferrer"
             >
-              <img src={PeakIcon} alt="" />
+              <img src={WayraIcon} alt="" />
             </a>
           </div>
           <hr className="mx-12 my-6 md:my-9 opacity-20" />
@@ -270,7 +285,7 @@ function NFTPage() {
             </a>
             <a
               className="transition-transform duration-1000 hover:scale-95"
-              href="https://bankofgeorgia.ge/en/"
+              href="https://bankofgeorgiagroup.com/"
               target="_blank"
               rel="noreferrer"
             >
@@ -286,11 +301,11 @@ function NFTPage() {
             </a>
             <a
               className="transition-transform duration-1000 hover:scale-95"
-              href="https://www.wayra.com/"
+              href="https://www.essentio.at/"
               target="_blank"
               rel="noreferrer"
             >
-              <img src={WayraIcon} alt="" />
+              <img src={EssentioIcon} alt="" />
             </a>
           </div>
           <hr className="mx-12 my-6 md:my-9 opacity-20" />
@@ -336,8 +351,8 @@ function NFTPage() {
             <P className="mb-6 text-3xl md:mb-10 text-opacity-60">
               And join the journy
             </P>
-            <Button href="https://discord.stackbrowser.com/" icon={DiscordLogo}>
-              Join our Discord
+            <Button target="_blank" href="https://discord.stackbrowser.com/" icon={DiscordLogo}>
+              Join the Discussion
             </Button>
           </div>
           <div className="relative order-first mb-6 lg:col-span-2 md:order-last md:mb-0">

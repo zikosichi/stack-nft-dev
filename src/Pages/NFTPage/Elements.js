@@ -26,7 +26,7 @@ export function UtilityIcon({ icon, className }) {
   );
 }
 
-export function Button({ color = "darkBlue", className, children, icon, href }) {
+export function Button({ color = "darkBlue", className, children, icon, href, target }) {
   const colors = {
     darkBlue: "text-white from-[#4F69DE] to-[#504DE6]",
     lightBlue: "text-white from-[#66AEE1] to-[#5989DF]",
@@ -36,6 +36,7 @@ export function Button({ color = "darkBlue", className, children, icon, href }) 
   return (
     <a
       href={href}
+      target={target}
       className={`${colors[color]} ${className} block relative overflow-hidden px-8 py-3 md:py-4 rounded-xl md:rounded-2xl bg-gradient-to-b w-[270px] cursor-pointer glow-top transition-all duration-700 hover:-translate-y-1 active:translate-y-0 active:duration-300`}
     >
       <div className="flex justify-center gap-3">

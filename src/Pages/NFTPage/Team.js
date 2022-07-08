@@ -18,6 +18,8 @@ import David from "../../assets/team/cursors/david.png"
 function Area({ coords, size=[12, 12], href, alt }) {
   return (
     <a
+      target="_blank"
+      rel="noreferrer"
       href={href}
       alt={alt}
       className={`absolute hover:opacity-20 opacity-0 transition-opacity duration-1000`}
