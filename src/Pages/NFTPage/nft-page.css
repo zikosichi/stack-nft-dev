@@ -1,4 +1,5 @@
 .NFTPage {
+  position: relative;
   background: radial-gradient(
       518.1% 109.09% at 50% -9.78%,
       #634dff 0%,
@@ -7,9 +8,23 @@
       #3d8efc 50.38%
     ),
     radial-gradient(
-        364.36% 14.18% at 0% 0%,
-        #ffc2bb 0%,
-        #ea84be 14%,
-        #46a0ff 100%
-      );
+      364.36% 14.18% at 0% 0%,
+      #ffc2bb 0%,
+      #ea84be 14%,
+      #46a0ff 100%
+    );
+}
+
+.NFTPage::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  background: url(https://grainy-gradients.vercel.app/noise.svg);
+  filter: contrast(170%) brightness(1000%);
+  pointer-events: none;
+  /* z-index: -1; */
 }

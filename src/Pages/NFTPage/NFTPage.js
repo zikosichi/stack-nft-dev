@@ -42,19 +42,18 @@ function NFTPage() {
   return (
     <div className="overflow-x-hidden NFTPage">
       {/* ABOVE THE FOLD */}
-      <div className="container px-4 pt-20 mx-auto text-center md:pt-32">
+      <div className="container relative z-10 px-4 pt-20 mx-auto text-center md:pt-10">
         <img src={StackLogo} alt="Stack Logo" className="mx-auto" />
 
         <div className="max-w-5xl px-4 mx-auto">
-          <H1 className="max-w-5xl mt-20 md:mt-44">
-            {/* <span className="font-normal text-7xl">We organize chaotic internet</span> */}
+          <H1 className="max-w-5xl mt-20 md:mt-40">
             We organize chaotic internet
           </H1>
-          <P className="mt-10">
+          <P className="mt-4">
             Stack is a Spatial Browser for Mindful Online Living
           </P>
 
-          <div className="inline-flex flex-col gap-3 mx-auto mt-20 md:flex-row">
+          <div className="inline-flex flex-col gap-3 mx-auto mt-14 md:flex-row">
             <Button
               target="_blank"
               href="https://discord.stackbrowser.com/"
@@ -75,7 +74,7 @@ function NFTPage() {
       </div>
 
       {/* PANORAMA */}
-      <div className="container mx-auto text-center mb-12 max-w-[1800px]">
+      <div className="container mx-auto text-center -mt-16 max-w-[1800px]">
         <div className="relative w-[200vw] translate-x-[-50vw] lg:translate-x-0 lg:w-auto">
           <img src={Panorama} alt="Stack Panorama" />
           <img
@@ -92,9 +91,9 @@ function NFTPage() {
       </div>
 
       {/* ABOUT */}
-      <div className="container max-w-5xl px-6 mx-auto my-12 md:text-center">
+      <div className="container relative z-10 max-w-2xl px-6 mx-auto mt-12 md:mt-32 md:text-center">
         <H1>About the project</H1>
-        <P className="mt-10">
+        <P className="mt-14">
           This is a Utility NFT project. We are issuing Non-Fungible tokens as
           an ownership deed for Stack PRO lifetime license.
         </P>
@@ -106,7 +105,7 @@ function NFTPage() {
           of the internet, want to be part of our journey, and support Stack!
         </P>
 
-        <div className="inline-flex gap-3 mx-auto mt-12">
+        <div className="inline-flex gap-3 mx-auto mt-14">
           <Button
             target="_blank"
             href="https://whitepaper.stackbrowser.com/"
@@ -119,7 +118,7 @@ function NFTPage() {
       </div>
 
       {/* CURSORS */}
-      <div className="container px-3 mx-auto text-center my-28 max-w-8xl">
+      <div className="container px-3 mx-auto text-center mt-60 max-w-8xl">
         <img src={Cursors} alt="NFT Cursors" className="hidden md:block" />
         <img
           src={CursorsMobile}
@@ -344,7 +343,7 @@ function NFTPage() {
       </div>
 
       {/* FOOTER */}
-      <div className="container max-w-5xl px-6 py-16 mx-auto lg:py-32 lg:px-0">
+      <div className="container relative z-10 max-w-5xl px-6 py-16 mx-auto lg:py-32 lg:px-0">
         <div className="grid items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           <div>
             <H1 className="mb-3 md:mb-6 leading-[1.1]">Grab your spaceship</H1>
@@ -412,6 +411,14 @@ function NFTPage() {
             >
               <P>
                 <span className="text-lg md:text-xl">Partners</span>
+              </P>
+            </a>
+            <a
+              href="https://www.craft.do/s/e1OcQV5NcnjXUw"
+              className="block mb-1 opacity-50 hover:opacity-100"
+            >
+              <P>
+                <span className="text-lg md:text-xl">Terms & Conditions</span>
               </P>
             </a>
           </div>
