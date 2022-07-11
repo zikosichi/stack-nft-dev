@@ -9,23 +9,6 @@
   }
 }
 
-/* .NFTPage {
-  position: relative;
-  background: radial-gradient(
-      518.1% 109.09% at 50% -9.78%,
-      #634dff 0%,
-      #e0a3d2 33.41%,
-      #71baef 39.93%,
-      #3d8efc 50.38%
-    ),
-    radial-gradient(
-      364.36% 14.18% at 0% 0%,
-      #ffc2bb 0%,
-      #ea84be 14%,
-      #46a0ff 100%
-    );
-} */
-
 .NFTPage::after {
   content: "";
   position: absolute;
@@ -35,8 +18,6 @@
   height: 100%;
   opacity: 0.3;
   background: url(https://grainy-gradients.vercel.app/noise.svg);
-  /* filter: contrast(170%) brightness(-50%); */
-  /* filter: brightness(30%); */
   pointer-events: none;
   z-index: 11;
 }

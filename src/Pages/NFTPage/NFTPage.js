@@ -7,12 +7,8 @@ import Cursors from "../../assets/Cursors.png";
 import CursorsMobile from "../../assets/cursors-mobile.png";
 
 import SpaceSun from "../../assets/space-sun.png";
-import SpaceshipDrift from "../../assets/spaceship-drift.png";
 import Drifter from "../../assets/hero/drifter.png";
 import Waves from "../../assets/hero/waves.svg";
-import Panorama from "../../assets/panorama/panorama.png";
-import PanoramaFloor from "../../assets/panorama/Floor.png";
-import PanoramaReflection from "../../assets/panorama/Reflection.png";
 
 import SpaceDecks from "../../assets/SpaceDecks.png";
 import DeckGround from "../../assets/footer/deck.png";
@@ -28,36 +24,39 @@ import TicketIcon from "../../assets/perks/ticket.svg";
 import UserIcon from "../../assets/perks/user.svg";
 import UsersIcon from "../../assets/perks/users.svg";
 
-import FiveHundredIcon from "../../assets/investor-logos/500.png";
-import BogIcon from "../../assets/investor-logos/Bog.png";
-import CircleIcon from "../../assets/investor-logos/Circle Cove.png";
-import FlyerIcon from "../../assets/investor-logos/Flyer One Ventures.png";
-import LunarIcon from "../../assets/investor-logos/Lunar ventures.png";
-import PeakIcon from "../../assets/investor-logos/Peak Capital.png";
-import EssentioIcon from "../../assets/investor-logos/Essentio.png";
-import WayraIcon from "../../assets/investor-logos/Wayra.png";
-import ZemuIcon from "../../assets/investor-logos/Zemu.png";
-
 import { Button, H1, P, UtilityIcon } from "./Elements";
 import { FAQ } from "./FAQ";
 import { Team } from "./Team";
+import { Investors } from "./Investors";
 
 function NFTPage() {
   return (
     <div className="overflow-x-hidden NFTPage">
       {/* ABOVE THE FOLD */}
       <div className="container relative z-20 px-4 pt-12 mx-auto text-center md:pt-10">
-        <img src={StackLogo} alt="Stack Logo" className="mx-auto opacity-50 md:w-auto w-[116px]" />
-        <img src={SpaceSun} alt="Stack Logo" className="absolute w-[60%] md:w-[45%] top-0 left-[-20%] md:block hidden" />
+        <img
+          src={StackLogo}
+          alt="Stack Logo"
+          className="mx-auto opacity-50 md:w-auto w-[116px]"
+        />
+        <img
+          src={SpaceSun}
+          alt="Stack Logo"
+          className="absolute w-[60%] md:w-[45%] top-0 left-[-20%] md:block hidden"
+        />
 
         <div className="absolute max-w-[300%] w-[300%] md:max-w-[110%] md:w-[110%] md:right-[-5%] right-[5%] rotate-[-10deg] md:rotate-0 top-[140%] md:top-[115%] pointer-events-none">
-          <img src={Drifter} alt="Stack Logo" className="absolute right-[15.5%] top-[-9.5%] w-[8%]" />
+          <img
+            src={Drifter}
+            alt="Stack Logo"
+            className="absolute right-[15.5%] top-[-9.5%] w-[8%]"
+          />
           <img src={Waves} alt="Stack Logo" className="relative z-10 w-full" />
         </div>
 
         <div className="relative z-20 max-w-5xl px-4 mx-auto">
-          <H1 className="max-w-5xl mt-20 md:mt-60">
-            We make online <br /> collaboration harmonious
+          <H1 color="white" className="max-w-5xl mt-20 md:mt-60">
+            we organize chaotic internet
           </H1>
           <P className="mt-2 md:mt-4">
             Stack is a Spatial Browser for Mindful Online Living
@@ -168,7 +167,7 @@ function NFTPage() {
             </div>
           </div>
 
-          <div className="md:col-span-6 lg:col-span-7 md:col-end-13">
+          <div className="md:col-span-6 md:col-end-13">
             <img src={SpaceDecks} alt="Space Decks" />
           </div>
         </div>
@@ -214,117 +213,26 @@ function NFTPage() {
       </div>
 
       {/* TEAM */}
-      <div className="container px-6 py-20 mx-auto lg:px-0 max-w-7xl">
+      <div className="container max-w-5xl px-6 py-20 mx-auto lg:px-0">
+        <div className="mb-6 md:mb-20">
+          <H1>The team behind Stack</H1>
+          <P>
+            <a
+              href="https://www.craft.do/s/fwzTJuS8NlwTnI"
+              target="_blank"
+              rel="noreferrer"
+              className="block underline transition-transform duration-500 hover:translate-x-1"
+            >
+              Behind the scenes - The Team: Our Culture & Values
+            </a>
+          </P>
+        </div>
         <Team />
       </div>
 
       {/* INVESTORS */}
-      <div className="container max-w-5xl px-3 mx-auto my-20 lg:px-0 md:my-32">
-        <div className="py-8 md:py-12 bg-blue-50 bg-opacity-20 rounded-3xl border-opacity-30 glass-glow">
-          <H1 className="mb-8 text-center md:mb-12">Our Partners</H1>
-          <hr className="mx-12 mb-6 md:mb-9 opacity-20" />
-          <div className="grid grid-cols-2 px-14 gap-y-2 md:gap-y-6 md:grid-cols-3 gap-x-0 md:gap-x-28">
-            <a
-              className="transition-transform duration-1000 hover:scale-95"
-              href="https://peak.capital/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src={PeakIcon} alt="" />
-            </a>
-            <a
-              className="transition-transform duration-1000 hover:scale-95"
-              href="https://lunar.vc/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src={LunarIcon} alt="" />
-            </a>
-            <a
-              className="transition-transform duration-1000 hover:scale-95"
-              href="https://www.wayra.com/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src={WayraIcon} alt="" />
-            </a>
-          </div>
-          <hr className="mx-12 my-6 md:my-9 opacity-20" />
-          <div className="grid grid-cols-2 px-14 gap-y-2 md:gap-y-6 md:grid-cols-3 gap-x-0 md:gap-x-28">
-            <a
-              className="transition-transform duration-1000 hover:scale-95"
-              href="https://www.flyerone.vc/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src={FlyerIcon} alt="" />
-            </a>
-            <a
-              className="transition-transform duration-1000 hover:scale-95"
-              href="https://500.co/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src={FiveHundredIcon} alt="" />
-            </a>
-            <a
-              className="transition-transform duration-1000 hover:scale-95"
-              href="https://circlecove.com/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src={CircleIcon} alt="" />
-            </a>
-            <a
-              className="transition-transform duration-1000 hover:scale-95"
-              href="https://bankofgeorgiagroup.com/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src={BogIcon} alt="" />
-            </a>
-            <a
-              className="transition-transform duration-1000 hover:scale-95"
-              href="https://www.zemuvc.co/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src={ZemuIcon} alt="" />
-            </a>
-            <a
-              className="transition-transform duration-1000 hover:scale-95"
-              href="https://www.essentio.at/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src={EssentioIcon} alt="" />
-            </a>
-          </div>
-          <hr className="mx-12 my-6 md:my-9 opacity-20" />
-          <div className="grid grid-cols-3">
-            <div className="text-center">
-              <h2 className="text-4xl font-black md:text-5xl text-violet-50 text-shadow-xs">
-                10
-              </h2>
-              <P>Countries</P>
-            </div>
-            <div className="text-center">
-              <h2 className="text-4xl font-black md:text-5xl text-violet-50 text-shadow-xs">
-                9
-              </h2>
-              <P>
-                <span className="hidden md:inline">Institutional</span>{" "}
-                investors
-              </P>
-            </div>
-            <div className="text-center">
-              <h2 className="text-4xl font-black md:text-5xl text-violet-50 text-shadow-xs">
-                2
-              </h2>
-              <P>Angels</P>
-            </div>
-          </div>
-        </div>
+      <div className="container max-w-[1070px] mx-auto my-20 md:my-32">
+        <Investors></Investors>
       </div>
 
       {/* FAQ */}
@@ -340,10 +248,14 @@ function NFTPage() {
         <div className="grid items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           <div>
             <H1 className="mb-3 md:mb-6 leading-[1.1]">Grab your spaceship</H1>
-            <P className="mb-6 text-3xl md:mb-10 text-opacity-60">
-              And join the journy
+            <P className="mb-6 text-3xl text-indigo-100 md:mb-10 text-opacity-80">
+              And join the ride
             </P>
-            <Button target="_blank" href="https://discord.stackbrowser.com/" icon={DiscordLogo}>
+            <Button
+              target="_blank"
+              href="https://discord.stackbrowser.com/"
+              icon={DiscordLogo}
+            >
               Join the Discussion
             </Button>
           </div>

@@ -1,7 +1,11 @@
-export function H1({ children, className }) {
+export function H1({ children, className, color }) {
+  const colorClass = color === 'white'
+    ? `text-white`
+    : `text-transparent bg-clip-text bg-gradient-to-r from-white to-violet-200`;
+
   return (
     <h1
-      className={`${className} font-system leading-tight font-semibold text-4xl md:text-[64px] text-white`}
+      className={`${className} ${colorClass} font-system leading-tight font-semibold text-4xl md:text-[64px]`}
     >
       {children}
     </h1>
@@ -20,13 +24,22 @@ export function P({ children, className }) {
 
 export function UtilityIcon({ icon, className }) {
   return (
-    <div className={`${className} flex items-center justify-center w-16 h-16 mb-4 bg-white rounded-full bg-opacity-10`}>
+    <div
+      className={`${className} flex items-center justify-center w-16 h-16 mb-4 bg-white rounded-full bg-opacity-10`}
+    >
       <img src={icon} alt="" />
     </div>
   );
 }
 
-export function Button({ color = "darkBlue", className, children, icon, href, target }) {
+export function Button({
+  color = "darkBlue",
+  className,
+  children,
+  icon,
+  href,
+  target,
+}) {
   const colors = {
     darkBlue: "text-white text-opacity-90 from-[#4F69DE] to-[#504DE6]",
     lightBlue: "text-white text-opacity-90 from-[#66AEE1] to-[#5989DF]",
