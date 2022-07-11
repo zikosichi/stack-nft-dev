@@ -1,7 +1,7 @@
 export function H1({ children, className }) {
   return (
     <h1
-      className={`${className} font-system md:leading-tight font-semibold text-transparent bg-clip-text text-4xl md:text-6xl bg-gradient-to-r from-white to-violet-200`}
+      className={`${className} font-system leading-tight font-semibold text-4xl md:text-[64px] text-white`}
     >
       {children}
     </h1>
@@ -11,7 +11,7 @@ export function H1({ children, className }) {
 export function P({ children, className }) {
   return (
     <p
-      className={`${className} font-sans leading-[1.6] text-shadow-xs text-xl font-normal font-inter text-violet-50`}
+      className={`${className} font-sans leading-[1.6] text-shadow-xs text-xl font-normal font-inter text-purple-50`}
     >
       {children}
     </p>
@@ -37,9 +37,9 @@ export function Button({ color = "darkBlue", className, children, icon, href, ta
     <a
       href={href}
       target={target}
-      className={`${colors[color]} ${className} block relative overflow-hidden px-8 py-3 md:py-4 rounded-xl md:rounded-xl bg-gradient-to-b w-[250px] cursor-pointer glow-top transition-transform duration-500 hover:translate-y-[-2px] active:translate-y-0 active:duration-300`}
+      className={`${colors[color]} ${className} block relative overflow-hidden px-8 py-3 md:py-4 rounded-xl md:rounded-xl bg-gradient-to-b w-[260px] cursor-pointer glow-top transition-transform duration-500 hover:translate-y-[-2px] active:translate-y-0 active:duration-300`}
     >
-      <div className="flex justify-center gap-3 font-medium">
+      <div className="flex justify-center gap-3 text-lg font-medium">
         <div className="absolute top-0 left-0 w-full h-full transition-opacity duration-1000 bg-white opacity-0 hover:opacity-10"></div>
         {icon && <img src={icon} alt="" className="w-6 color-white" />}
         {children}

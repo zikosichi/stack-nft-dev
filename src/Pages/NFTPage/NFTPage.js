@@ -6,6 +6,10 @@ import CraftLogo from "../../assets/craft.svg";
 import Cursors from "../../assets/Cursors.png";
 import CursorsMobile from "../../assets/cursors-mobile.png";
 
+import SpaceSun from "../../assets/space-sun.png";
+import SpaceshipDrift from "../../assets/spaceship-drift.png";
+import Drifter from "../../assets/hero/drifter.png";
+import Waves from "../../assets/hero/waves.svg";
 import Panorama from "../../assets/panorama/panorama.png";
 import PanoramaFloor from "../../assets/panorama/Floor.png";
 import PanoramaReflection from "../../assets/panorama/Reflection.png";
@@ -42,18 +46,24 @@ function NFTPage() {
   return (
     <div className="overflow-x-hidden NFTPage">
       {/* ABOVE THE FOLD */}
-      <div className="container relative z-10 px-4 pt-20 mx-auto text-center md:pt-10">
-        <img src={StackLogo} alt="Stack Logo" className="mx-auto" />
+      <div className="container relative z-20 px-4 pt-12 mx-auto text-center md:pt-10">
+        <img src={StackLogo} alt="Stack Logo" className="mx-auto opacity-50 md:w-auto w-[116px]" />
+        <img src={SpaceSun} alt="Stack Logo" className="absolute w-[60%] md:w-[45%] top-0 left-[-20%] md:block hidden" />
 
-        <div className="max-w-5xl px-4 mx-auto">
-          <H1 className="max-w-5xl mt-20 md:mt-40">
-            We organize chaotic internet
+        <div className="absolute max-w-[300%] w-[300%] md:max-w-[110%] md:w-[110%] md:right-[-5%] right-[5%] rotate-[-10deg] md:rotate-0 top-[140%] md:top-[115%] pointer-events-none">
+          <img src={Drifter} alt="Stack Logo" className="absolute right-[15.5%] top-[-9.5%] w-[8%]" />
+          <img src={Waves} alt="Stack Logo" className="relative z-10 w-full" />
+        </div>
+
+        <div className="relative z-20 max-w-5xl px-4 mx-auto">
+          <H1 className="max-w-5xl mt-20 md:mt-60">
+            We make online <br /> collaboration harmonious
           </H1>
-          <P className="mt-4">
+          <P className="mt-2 md:mt-4">
             Stack is a Spatial Browser for Mindful Online Living
           </P>
 
-          <div className="inline-flex flex-col gap-3 mx-auto mt-14 md:flex-row">
+          <div className="inline-flex flex-col gap-4 mx-auto mt-10 md:mt-14 md:flex-row">
             <Button
               target="_blank"
               href="https://discord.stackbrowser.com/"
@@ -73,27 +83,10 @@ function NFTPage() {
         </div>
       </div>
 
-      {/* PANORAMA */}
-      <div className="container mx-auto text-center -mt-16 max-w-[1800px]">
-        <div className="relative w-[200vw] translate-x-[-50vw] lg:translate-x-0 lg:w-auto">
-          <img src={Panorama} alt="Stack Panorama" />
-          <img
-            src={PanoramaFloor}
-            alt="Stack Floor"
-            className="absolute -bottom-[40%] opacity-50 w-full scale-x-105"
-          />
-          <img
-            src={PanoramaReflection}
-            alt="Stack Floor"
-            className="absolute -bottom-[40%] w-[94%] left-1/2 -translate-x-1/2"
-          />
-        </div>
-      </div>
-
       {/* ABOUT */}
-      <div className="container relative z-10 max-w-2xl px-6 mx-auto mt-12 md:mt-32 md:text-center">
+      <div className="container relative z-10 max-w-2xl px-6 mx-auto mt-[600px] md:mt-[40%] md:text-center">
         <H1>About the project</H1>
-        <P className="mt-14">
+        <P className="mt-8 md:mt-14">
           This is a Utility NFT project. We are issuing Non-Fungible tokens as
           an ownership deed for Stack PRO lifetime license.
         </P>
@@ -118,7 +111,7 @@ function NFTPage() {
       </div>
 
       {/* CURSORS */}
-      <div className="container px-3 mx-auto text-center mt-60 max-w-8xl">
+      <div className="container px-3 mx-auto mt-32 text-center md:mt-60 max-w-8xl">
         <img src={Cursors} alt="NFT Cursors" className="hidden md:block" />
         <img
           src={CursorsMobile}
@@ -182,7 +175,7 @@ function NFTPage() {
       </div>
 
       {/* PERKS */}
-      <div className="container max-w-5xl px-6 mx-auto my-16 -mt-12 lg:my-32 md:mt-32">
+      <div className="container max-w-5xl px-6 mx-auto my-16 mt-20 lg:my-32 md:mt-32">
         <H1 className="mb-6 md:mb-20">Plus typical NFT Perks</H1>
         <div className="grid grid-cols-1 gap-6 md:gap-12 md:grid-cols-2 gap-x-28">
           <div className="flex items-center gap-4">
